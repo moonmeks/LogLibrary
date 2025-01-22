@@ -22,6 +22,6 @@ $(APP): $(APP).o $(LIB)
 	$(CXX) $(CXXFLAGS) -o $@ $^ -L. -l$(LIBRARY_NAME)
 
 clean:
-	rm -f $(LIB) $(APP) $(LIBRARY_NAME).o $(APP).o
+	rm -f $(LIBRARY_NAME).o $(APP).o
 
 .PHONY: all clean
